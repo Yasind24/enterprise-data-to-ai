@@ -1,0 +1,7 @@
+service_point_id,account_id,domain,status,is_test_account
+SP001,A001,electric,active,false
+SP002,A001,gas,active,false
+SP003,A002,electric,active,false
+SP004,A003,gas,inactive,false
+SP005,A004,electric,active,true
+SP006,A005,gas,inactive,false
