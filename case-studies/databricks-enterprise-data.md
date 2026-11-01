@@ -8,7 +8,9 @@ Enterprise data was spread across domains, with fragmented metadata, lineage, an
 
 ## My contribution
 
-I created domain-specific Genie workspaces in Databricks, used its Supervisor Agent to coordinate them, and built a cloud-powered agent with a chatbot UI for users to explore enterprise data.
+I architected the platform and built it with a small development team. Claude, through the Claude Agent SDK, orchestrated the experience. Beneath it, I created domain-specific Genie spaces in Databricks, coordinated by Databricks' Supervisor Agent. A web-search agent and MCP-connected tools added external context, so internal customer data and outside signals could be combined for sales research such as cross-sell, upsell, and renewals. A chatbot UI let users work with it.
+
+The platform was piloted with a small group of sales users, and I moved to another engagement while it was being scaled up.
 
 I also built an opportunity-discovery pipeline in the broader flow, covering electric and gas opportunities involving government utility entities and potential clients.
 
@@ -16,7 +18,7 @@ I also built an opportunity-discovery pipeline in the broader flow, covering ele
 
 **Domain boundaries:** Separate workspaces provided domain-specific contexts for data exploration.
 
-**Orchestration:** A supervisor coordinated those workspaces behind a single user experience.
+**Orchestration in two layers:** Databricks' Supervisor Agent coordinated the Genie spaces, and Claude orchestrated across that supervisor, a web-search agent, and other tools behind a single user experience.
 
 **Application delivery:** A conversational UI made the platform accessible to users beyond its configuration surfaces.
 

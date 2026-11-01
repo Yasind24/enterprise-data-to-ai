@@ -8,9 +8,13 @@ Business meaning is distributed across Tableau and Power BI dashboards and BigQu
 
 ## My current work
 
-I am creating a semantic layer in Looker for enterprise domains including electric, gas, customer, corporate functions, supply chain, and cybersecurity.
+I lead a cross-functional team building a semantic layer in Looker over BigQuery for four domain groups: electric; gas; customer and corporate functions; and supply chain and cybersecurity. The work began as a vendor build, and I now own the method, the architecture, and the team's delivery and training.
 
-The work involves understanding business logic from existing dashboards and warehouse views, modelling that meaning in the semantic layer, and integrating it with an agentic platform featuring a chatbot interface and a multi-agent system.
+The work involves understanding business logic from existing dashboards and warehouse views, modelling that meaning in the semantic layer, and integrating it with an agentic platform. That platform is Gemini-powered, with domain-expert agents that use Looker as their source of business context before querying BigQuery.
+
+## How the build is accelerated
+
+I designed the process as a system of agent skills: a pre-run check that the metadata catalogue (Atlan) holds enough business context, automated extraction of dashboard logic and BigQuery lineage, LookML generation, an automated test suite, and one human review of the flags the process raises. The dashboards are then re-pointed at Looker so the enterprise source of truth stays in one place. This compresses a manual, multi-phase process substantially; subject-matter experts still validate the results.
 
 ## What the public demonstration will make tangible
 
