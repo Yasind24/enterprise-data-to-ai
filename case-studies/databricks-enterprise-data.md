@@ -1,39 +1,27 @@
-# Cross-domain enterprise data exploration with Databricks
+# Cross-domain enterprise data exploration
 
-**Status:** Prior client engagement. This is a high-level account of my work; client assets and quantitative impact claims are not included.
+**Status:** Architecture pattern. A generalised approach, not an account of any specific organisation.
 
 ## The business problem
 
-Enterprise data was spread across domains, with fragmented metadata, lineage, and business context. Providing a conversational interface required a way to organise that context and help users navigate the data.
+Enterprise data is often spread across domains, with fragmented metadata, lineage, and business context. A conversational interface needs a way to organise that context and help users navigate the data.
 
-## My contribution
+## The pattern
 
-I architected the platform and built it with a small development team. Claude, through the Claude Agent SDK, orchestrated the experience. Beneath it, I created domain-specific Genie spaces in Databricks, coordinated by Databricks' Supervisor Agent. A web-search agent and MCP-connected tools added external context, so internal customer data and outside signals could be combined for sales research such as cross-sell, upsell, and renewals. A chatbot UI let users work with it.
-
-The platform was piloted with a small group of sales users, and I moved to another engagement while it was being scaled up.
-
-I also built an opportunity-discovery pipeline in the broader flow, covering electric and gas opportunities involving government utility entities and potential clients.
+Create domain-specific data workspaces (for example, Genie spaces in Databricks), coordinated by a supervisor agent. Above that, an orchestration agent (for example, built with the Claude Agent SDK) works across the supervisor, a web-search agent, and MCP-connected tools, so internal data and outside context can be combined behind a single chat interface.
 
 ## Why the architecture matters
 
-**Domain boundaries:** Separate workspaces provided domain-specific contexts for data exploration.
+**Domain boundaries:** Separate workspaces give each domain its own context for data exploration.
 
-**Orchestration in two layers:** Databricks' Supervisor Agent coordinated the Genie spaces, and Claude orchestrated across that supervisor, a web-search agent, and other tools behind a single user experience.
+**Orchestration in two layers:** A supervisor agent coordinates the domain workspaces, and an orchestration agent works across that supervisor, external search, and other tools behind one user experience.
 
-**Application delivery:** A conversational UI made the platform accessible to users beyond its configuration surfaces.
-
-## Two workflows to showcase
-
-1. **Enterprise data exploration:** a user asks a question through the UI; domain workspaces and the supervisor support the interaction.
-2. **Opportunity discovery:** a separate pipeline supports understanding electric and gas opportunities.
-
-A future public walkthrough will use synthetic examples and explain each workflow separately.
+**Application delivery:** A conversational UI makes the platform usable beyond its configuration surfaces.
 
 ## Evidence to add
 
-- An original architecture visual reflecting the components I can discuss publicly.
-- A recreated question-to-answer walkthrough.
+- An original architecture visual.
+- A recreated question-to-answer walkthrough using synthetic data.
 - A clear account of design choices, limitations, and validation.
-- Measured outcomes only where evidence is available and disclosure is authorised.
 
 [Back to the portfolio](../README.md)

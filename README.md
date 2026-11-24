@@ -4,16 +4,16 @@
 
 Enterprise data can be large in volume and difficult to interpret. Business definitions live across dashboards, warehouse views, and domain-specific sources. An AI interface needs reliable business meaning behind its answers.
 
-This portfolio explores the journey from scattered data and logic to semantic models and conversational experiences, drawing on my work in Energy & Utilities.
+This portfolio explores the journey from scattered data and logic to semantic models and conversational experiences, drawing on patterns from Energy & Utilities.
 
-**Status:** Initial case-study narratives and demonstration design. The public application is not built yet.
+**Status:** Architecture patterns and demonstration design. The public application is not built yet.
 
 ## Explore
 
-| Experience | What it covers | Status |
+| Pattern | What it covers | Status |
 | --- | --- | --- |
-| [Databricks: cross-domain conversational data](case-studies/databricks-enterprise-data.md) | Domain-specific Genie workspaces, supervisor orchestration, and a conversational UI | Prior engagement; narrative based on my experience |
-| [Looker: business logic to semantic models](case-studies/looker-semantic-layer.md) | Understanding logic across Tableau, Power BI, and BigQuery views for agent integration | Current engagement; in progress |
+| [Cross-domain conversational data](case-studies/databricks-enterprise-data.md) | Domain-specific data workspaces, supervisor orchestration, and a conversational UI | Architecture pattern |
+| [Business logic to semantic models](case-studies/looker-semantic-layer.md) | Turning dashboard and warehouse logic into a semantic layer that agents can use | Architecture pattern |
 | [Public demonstration](demo/README.md) | A fictional utility with conflicting definitions of active customers | Planned; synthetic seed data included |
 
 ## The journey
@@ -43,8 +43,8 @@ The proposed experience lets a visitor compare conflicting definitions, review a
 
 [Explore the scenario →](demo/README.md) · [Inspect the synthetic data →](data/README.md) · [Review the evaluation plan →](evaluation/README.md)
 
-## About the case studies
+## About the patterns
 
-The narratives describe my professional experience. The demonstration is an independent implementation using fictional data and original assets. No client datasets, code, dashboard exports, or internal architecture documents are included. Platform integrations will be labelled as implemented, simulated, or planned as development progresses.
+The patterns are generalised architecture approaches, not accounts of any specific organisation. The demonstration is an independent implementation using fictional data and original assets. No client names, datasets, code, dashboard exports, or internal architecture documents are included. Platform integrations will be labelled as implemented, simulated, or planned as development progresses.
 
 [My profile](https://github.com/Yasind24) · [LinkedIn](https://linkedin.com/in/yasin-d)

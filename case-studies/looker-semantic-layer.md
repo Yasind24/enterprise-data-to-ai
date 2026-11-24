@@ -1,20 +1,26 @@
-# From scattered business logic to a Looker semantic layer
+# From scattered business logic to a semantic layer
 
-**Status:** Current engagement; in progress. This narrative distinguishes ongoing work from intended integration.
+**Status:** Architecture pattern. A generalised approach, not an account of any specific organisation.
 
 ## The business problem
 
-Business meaning is distributed across Tableau and Power BI dashboards and BigQuery views. Questions about enterprise data depend on understanding that logic, rather than interpreting field names alone.
+In many enterprises, business meaning is spread across BI dashboards (such as Tableau and Power BI) and warehouse views. Answering questions about enterprise data depends on understanding that logic, not on interpreting field names alone.
 
-## My current work
+## The pattern
 
-I lead a cross-functional team building a semantic layer in Looker over BigQuery for four domain groups: electric; gas; customer and corporate functions; and supply chain and cybersecurity. The work began as a vendor build, and I now own the method, the architecture, and the team's delivery and training.
+Build a semantic layer (for example, Looker over BigQuery) that captures business meaning once, organised by business domain. Model the logic found in existing dashboards and warehouse views, then let domain-expert AI agents use the semantic layer as their source of business context before they query the warehouse.
 
-The work involves understanding business logic from existing dashboards and warehouse views, modelling that meaning in the semantic layer, and integrating it with an agentic platform. That platform is Gemini-powered, with domain-expert agents that use Looker as their source of business context before querying BigQuery.
+## Accelerating the build with agent skills
 
-## How the build is accelerated
+The modelling work can be run as a system of agent skills:
 
-I designed the process as a system of agent skills: a pre-run check that the metadata catalogue (Atlan) holds enough business context, automated extraction of dashboard logic and BigQuery lineage, LookML generation, an automated test suite, and one human review of the flags the process raises. The dashboards are then re-pointed at Looker so the enterprise source of truth stays in one place. This compresses a manual, multi-phase process substantially; subject-matter experts still validate the results.
+- A pre-run check that the metadata catalogue holds enough business context.
+- Automated extraction of dashboard logic and warehouse lineage.
+- Generation of semantic-model code (such as LookML).
+- An automated test suite.
+- One human review of the flags the process raises.
+
+Dashboards can then be re-pointed at the semantic layer so the source of truth stays in one place. Subject-matter experts still validate the results.
 
 ## What the public demonstration will make tangible
 
@@ -26,10 +32,8 @@ The independent demonstration will focus on a small fictional dataset:
 - Trace a metric to the fields and logic that support it.
 - Show how those definitions shape a conversational answer.
 
-These are demonstration goals, not claims that every capability has been implemented in the client engagement.
-
 ## Evidence to add
 
-An original architecture visual, a synthetic business-logic example, a walkthrough of semantic modelling decisions, and validation results as the work progresses.
+An original architecture visual, a synthetic business-logic example, a walkthrough of semantic modelling decisions, and validation results from the demonstration.
 
 [Explore the planned public scenario](../demo/README.md) · [Back to the portfolio](../README.md)
